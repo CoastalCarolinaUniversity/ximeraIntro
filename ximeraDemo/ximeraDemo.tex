@@ -1,0 +1,102 @@
+\documentclass{ximera}
+
+\title{Ximera Demo}
+\author{Andrew}
+
+\begin{document}
+
+\begin{abstract}
+    Ximera Demonstration
+\end{abstract}
+
+
+\maketitle
+
+The purpose of this web document is to demonstrate the advantages of putting your course content on the web.
+
+\section{Ximera Environments}
+
+Each of the following environments is created with the command $\backslash$begin\{environment\}.
+
+\begin{theorem}(Increasing/Decreasing)
+    Suppose $f$ is differentiable on the open interval, $I$. If $f'(x) >0$ on $I$ then $f$ is {\bf increasing} on $I$, and similarly
+    if $f'(x) <0$ on $I$ then $f$ is {\bf decreasing} on $I$.
+\end{theorem}
+
+\begin{proposition}
+    Let $\mu$ and $\nu$ be eigenvalues of $A$...
+\end{proposition}
+
+\begin{lemma}
+    If $u \perp v$ and $u \perp w$, then...
+\end{lemma}
+
+\begin{corollary}
+    An eigenspace is at least one dimensional.
+\end{corollary}
+
+\begin{remark}
+    The sum of the dimensions of the eigenspaces is...
+\end{remark}
+
+\begin{example}
+    Roses are red.
+\end{example}
+In addition to the normal tex output html format, ximera offers the answer box! The answer box is the most fundamental form of assessment feedback. It instantly lets a user know whether their answer was acceptable or not-and it has the patience to allow for as many corrections as are needed.
+\begin{problem}
+What is the answer?
+    \[
+    \answer{gegwegg}
+    \]
+\end{problem}
+
+Explore the answer box for yourself and notice things about it. Surely you wont actually get the right answer, so you can hack at it all day! Type ``infty" or ``pi" or ``sin(x)" or ``sqrt x".  Notice that as you type, an interpreter instantly converts your input to standard mathematical symbols.
+This allows students to be sure that they are typing things in correctly.
+
+
+\begin{problem}
+Here is a multiple choice question:
+    \begin{multipleChoice}
+        \choice[correct]{Correct}
+        \choice{Incorrect}
+        \choice{Incorrect}
+    \end{multipleChoice}
+    \begin{hint}
+        hint hint
+    \end{hint}
+\end{problem}
+Notice the hint. It is easily created using the command $\backslash$begin\{hint\}.
+
+\begin{problem}
+Here is a select all question:
+    \begin{selectAll}
+        \choice{Incorrect}
+        \choice[correct]{Correct}
+        \choice[correct]{Correct}
+    \end{selectAll}
+\end{problem}
+
+Here is a question with word choices:
+\begin{question}
+    Who me? \begin{wordChoice}{
+        \choice[correct]{Yes}
+        \choice{No}}
+    \end{wordChoice}
+\end{question}
+Embedding an image using the includegraphics command:
+\begin{image}
+    \includegraphics{missionPatch.jpg}
+\end{image}
+
+\section{Embedding Interactives}
+
+Ximera supports the following commands for easy embedding of output from other sources:
+\text{\textbackslash youtube\{\}}: \youtube{AkYCqV75EOw}
+\text{\textbackslash desmos\{\}}: \desmos{j9hdqgwiwg}{800}{600}
+\text{\textbackslash geogebra\{\}}: \geogebra{vV7WGnrc}{1000}{750}\\
+and 
+\text{\textbackslash doenet\{\}}
+
+
+
+\end{document}
