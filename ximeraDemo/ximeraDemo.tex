@@ -16,63 +16,73 @@ The purpose of this web document is to demonstrate the advantages of putting you
 
 \section{Ximera Environments}
 
-Each of the following environments is created with the command $\backslash$begin\{environment\}.
+Each of the following environments is created with the command $\backslash$begin\{name of environment\}.
 
+The 'theorem' environment:
 \begin{theorem}(Increasing/Decreasing)
     Suppose $f$ is differentiable on the open interval, $I$. If $f'(x) >0$ on $I$ then $f$ is {\bf increasing} on $I$, and similarly
     if $f'(x) <0$ on $I$ then $f$ is {\bf decreasing} on $I$.
 \end{theorem}
 
+The 'proposition' environment:
 \begin{proposition}
     Let $\mu$ and $\nu$ be eigenvalues of $A$...
 \end{proposition}
 
+The 'lemma' environment:
 \begin{lemma}
     If $u \perp v$ and $u \perp w$, then...
 \end{lemma}
 
+The 'corollary' environment:
 \begin{corollary}
     An eigenspace is at least one dimensional.
 \end{corollary}
 
+The 'remark' environment:
 \begin{remark}
     The sum of the dimensions of the eigenspaces is...
 \end{remark}
 
+The 'example' environment:
 \begin{example}
     Roses are red.
 \end{example}
 In addition to the normal tex output html format, ximera offers the answer box! The answer box is the most fundamental form of assessment feedback. It instantly lets a user know whether their answer was acceptable or not-and it has the patience to allow for as many corrections as are needed.
+
+The 'problem' environment:
 \begin{problem}
 What is the answer?
     \[
-    \answer{gegwegg}
+    \answer{42}
     \]
 \end{problem}
 
-Explore the answer box for yourself and notice things about it. Surely you wont actually get the right answer, so you can hack at it all day! Type ``infty" or ``pi" or ``sin(x)" or ``sqrt x".  Notice that as you type, an interpreter instantly converts your input to standard mathematical symbols.
-This allows students to be sure that they are typing things in correctly.
+Explore the answer box!
+Some of the special things the answer box can handle are: infty, pi, union, sqrt sin(x), ln(x) etc. Notice that as you type, an interpreter instantly converts your input to standard mathematical symbols. To get the green check mark, type 42 in the answer box :)
 
-
+In addition to an answer box, Ximera also provides multiple choice, word choice and select all formats.
 \begin{problem}
-Here is a multiple choice question:
+Here is a multiple choice question.
+Which of the following is an anti-derivative of $\ln x$?
     \begin{multipleChoice}
-        \choice[correct]{Correct}
-        \choice{Incorrect}
-        \choice{Incorrect}
+        \choice[correct]{$x\ln(x) - x$}
+        \choice{$x\ln(x) - 1$}
+        \choice{$x\ln(x) + x$}
     \end{multipleChoice}
     \begin{hint}
-        hint hint
+        Differentiate the options.
     \end{hint}
 \end{problem}
 Notice the hint. It is easily created using the command $\backslash$begin\{hint\}.
 
 \begin{problem}
-Here is a select all question:
+Here is a select all question.
+Select al of the correct statements:
     \begin{selectAll}
-        \choice{Incorrect}
-        \choice[correct]{Correct}
-        \choice[correct]{Correct}
+        \choice{If $f$ is continuous, then $f$ is differentiable.}
+        \choice[correct]{If $f$ is differentiable then $f$ is continuous.}
+        \choice[correct]{If $f$ is not continuous, then $f$ is not differentiable.}
     \end{selectAll}
 \end{problem}
 
@@ -83,10 +93,6 @@ Here is a question with word choices:
         \choice{No}}
     \end{wordChoice}
 \end{question}
-Embedding an image using the includegraphics command:
-\begin{image}
-    \includegraphics{missionPatch.jpg}
-\end{image}
 
 \section{Embedding Interactives}
 
@@ -94,9 +100,70 @@ Ximera supports the following commands for easy embedding of output from other s
 \text{\textbackslash youtube\{\}}: \youtube{AkYCqV75EOw}
 \text{\textbackslash desmos\{\}}: \desmos{j9hdqgwiwg}{800}{600}
 \text{\textbackslash geogebra\{\}}: \geogebra{vV7WGnrc}{1000}{750}\\
-and 
-\text{\textbackslash doenet\{\}}
+Embedding an image using the includegraphics command:
+\begin{image}
+    \includegraphics{missionPatch.jpg}
+\end{image}
+The above image is in the ``image" environment- $\backslash$begin\{image\}- and clicking on the image opens it up in a stand alone mode. (If you do click on the image, you can close it by clicking on the white 'X' in the top far-right corner.)
 
+Ximera also supports embedding a format called doenet: \text{\textbackslash doenet\{\}}
 
+\section{Other Environments}
 
+\begin{claim}
+    $n! > 2^n$ for $n>3$
+\end{claim}
+\begin{proof}
+    \begin{observation}
+        The claim is true for $n=4$ since $4!=24>2^4 = 16$
+    \end{observation}
+    %\begin{hypothesis}
+        Suppose the claim is true for some $n$. Show it is true for $n+1$.
+    %\end{hypothesis}
+    \begin{explanation}
+        \[
+        (n+1)! = (n+1)n! > (n+1)2^n \geq 2^{n+1}
+        \]
+    \end{explanation}
+\end{proof}
+\begin{fact}
+    Irrational numbers exist by virtual of the fact that mathematics is a human creation and we said so.
+\end{fact}
+\begin{idea}
+    Similar triangles have the same proportions. In mathematical terms, ratios of corresponding sides are equal. 
+\end{idea}
+\begin{procedure}
+Trig sub problems are solved using the following simple 47 step procedure.
+    \begin{description}
+        \item[Step 1.] Write the trig identity corresponding to the radicand.
+        \item[Step 2.] Set the variable term of the radicand equal to the corresponding term in the identity.
+        \item[step 3.] Solve for the independent variable in the radicand. 
+    \end{description}
+\end{procedure}
+\begin{formula}
+    \[V = E+F-2\]
+\end{formula}
+\begin{paradox}
+    Since an infinite number of movements are impossible to make in a finite time, motion is impossible- Zeno
+\end{paradox}
+\begin{notation}
+    The following are valid notations for the derivative:
+    \[
+    \frac{dy}{dx},\quad \frac{df}{dx},\quad  y' \quad \mbox{and} \quad f'(x)
+    \]
+\end{notation}
+\begin{conjecture}
+    There are infinitely many pairs of twin primes.
+\end{conjecture}
+
+\begin{comment}
+    all
+    of
+    this
+    is
+    commented
+    out.
+    good for multi line comments
+    perfect for isolating tikz code and debugging tikzpics!
+\end{comment}
 \end{document}
