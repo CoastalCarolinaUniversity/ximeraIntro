@@ -1,6 +1,6 @@
 \documentclass{ximera}
 
-\title{Ximera Demo}
+\title{Introduction to Ximera}
 \author{Andrew}
 
 \begin{document}
@@ -12,11 +12,14 @@
 
 \maketitle
 
-The purpose of this web document is to demonstrate the advantages of putting your course content on the web.
+The purpose of this web document is to impress my friends.
+
+demonstrate the advantages of putting your course content on the web.
 
 \section{Ximera Environments}
 
 Each of the following environments is created with the command $\backslash$begin\{name of environment\}.
+Add .tex to the end of the url to see the source LaTeX code.
 
 The 'theorem' environment:
 \begin{theorem}(Increasing/Decreasing)
@@ -52,16 +55,14 @@ In addition to the normal tex output html format, ximera offers the answer box! 
 
 The 'problem' environment:
 \begin{problem}
-What is the answer?
-    \[
-    \answer{42}
-    \]
+According to a result derived from the analytic continuation of the Riemann zeta function and Ramanujan summation, the sum of the natural the sum of the natural numbers is: $\answer{-\frac{1}{12}}$
 \end{problem}
 
 Explore the answer box!
-Some of the special things the answer box can handle are: infty, pi, union, sqrt sin(x), ln(x) etc. Notice that as you type, an interpreter instantly converts your input to standard mathematical symbols. To get the green check mark, type 42 in the answer box :)
+Some of the special things the answer box can handle are: infty, pi, union, sqrt sin(x), ln(x) etc. Notice that as you type, an interpreter instantly converts your input to standard mathematical symbols. To get the green check mark, 
+type -$\frac{1}{12}$ in the answer box :)
 
-In addition to an answer box, Ximera also provides multiple choice, word choice and select all formats.
+In addition to an answer box, Ximera provides multiple-choice, word-choice and select-all formats to significantly bolster the assessment feedback options.
 \begin{problem}
 Here is a multiple choice question.
 Which of the following is an anti-derivative of $\ln x$?
@@ -74,11 +75,12 @@ Which of the following is an anti-derivative of $\ln x$?
         Differentiate the options.
     \end{hint}
 \end{problem}
-Notice the hint. It is easily created using the command $\backslash$begin\{hint\}.
+Notice the hint- an excellent sub-environment to the problem environment.
+Add .tex to the end of the url to see the source LaTeX code.
 
 \begin{problem}
-Here is a select all question.
-Select al of the correct statements:
+Here is a select-all question.
+Select all of the correct statements:
     \begin{selectAll}
         \choice{If $f$ is continuous, then $f$ is differentiable.}
         \choice[correct]{If $f$ is differentiable then $f$ is continuous.}
@@ -88,10 +90,7 @@ Select al of the correct statements:
 
 Here is a question with word choices:
 \begin{question}
-    Who me? \begin{wordChoice}{
-        \choice[correct]{Yes}
-        \choice{No}}
-    \end{wordChoice}
+    In the 14th century, the French Philosopher and Mathematician Nicole Oresme famously demonstrated that the Harmonic Series \begin{wordChoice}{\choice{converges}\choice[correct]{diverges}}\end{wordChoice} by comparing it to an infinite series with constant terms.
 \end{question}
 
 \section{Embedding Interactives}
@@ -107,6 +106,8 @@ Embedding an image using the includegraphics command:
 The above image is in the ``image" environment- $\backslash$begin\{image\}- and clicking on the image opens it up in a stand alone mode. (If you do click on the image, you can close it by clicking on the white 'X' in the top far-right corner.)
 
 Ximera also supports embedding a format called doenet: \text{\textbackslash doenet\{\}}
+
+Add .tex to the end of the url to see the source LaTeX code.
 
 \section{Other Environments}
 
@@ -166,4 +167,8 @@ Trig sub problems are solved using the following simple 47 step procedure.
     good for multi line comments
     perfect for isolating tikz code and debugging tikzpics!
 \end{comment}
+
+Add .tex to the end of the url to see the source LaTeX code.
+
+
 \end{document}
